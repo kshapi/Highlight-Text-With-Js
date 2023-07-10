@@ -1,0 +1,60 @@
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+}
+body {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.main {
+   width: 310px;
+   height: 350px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   user-select: none;
+   background: linear-gradient(#76A6B1, #9776B1);
+   color: #fff;
+}
+.main label {
+  font-size: 20px;
+}
+.main #search {
+  width: 90%;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  border-radius: 20px;
+  margin-top: 5px;
+  font-size: 17px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+#search::placeholder {
+  color: #fff;
+}
+.main #text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 17px;
+}
+.main span {
+  margin-top: 20px;
+  color: yellow;
+}
+/* When text will highlight */
+::highlight(My-Search) {
+  background-color: yellow;
+  color: #000;
+}
